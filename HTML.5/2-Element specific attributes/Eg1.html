@@ -11,40 +11,99 @@
     <p><bdo>Java is object oriented programming</bdo></p>
 
     <p><bdo dir="rtl">Java is object oriented programming</bdo></p>
+
+    <hr>
     <!-- ----------------------------------------------------------------------- -->
 
     <!-- abbr-abbreviations -->
+    <!-- attributes present in abbr and acronym are : title -->
 
      <p><abbr title="html">Hyper Text Markup Language</abbr></p>    <!--it is used for heading purpose and abbreviations
-                                                                                using abbr tag is better-->
+                                                                               in both of these using abbr tag is better-->
         <p><acronym title="css">cascading style sheets</acronym></p>
 
-
+<hr>
+<!-- ---------------------------------------------------- -->
 <!--Element specific attributes
 What are the attributes present in bdo?
 what are the attributs present in abbr tag and acronym tag?
 Difference between absolute path and relative path?
-what are the attributes present in img tag?-->
-<!-- ==================================================================================== -->
+what are the attributes present in img tag?
+what are the attributes present in audio tag?
+what are the attributed present in the video tag-->
 
-<!-- relative path :....images should be stored in the current using folder in the repository-->
+<!-- ============RELATIVE PATH AND ABSOLUTE PATH================================================================ -->
+
+<!--1) relative path :....images should be stored in the current using folder in the repository-->
 <!-- here we will be using src and alt;src is nothing but source location and alt is alternate -->
 <!-- we can also add another attribute width here -->
 
 <img src="car111.jpg" alt="car" width="400px">
 <img src="./car111.jpg" alt="car" width="400px">
+<hr>
+
+<!--image tag attributes : src,alt ,width and height can also be used -->
 
 <!--in relative path
 WE CAN USE dot forward slash ./ which means current using folder.... -->
 
+
 <!-- ------------------------------------------------------------------------- -->
-<!--absolute path :.....images should be stored in another folder in the repository....
+<!--2) absolute path :.....images should be stored in another folder in the repository....
 since they are outside the element specific attributes use double dot and forward slash and choose
 element specific attributes--> 
 
+<!-- a) from path location-->
+
 <img src="../2-Element specific attributes/car3.jpg" alt="" width="400px">
 
+<hr>
 
+<!-- b) from urls -->
+
+<!-- now go to lorem ipsum images and go to lorem picsum select a random picture and copy the image address and store in the src -->
+
+<img src="https://picsum.photos/536/354" alt="liveimages" width="400px">
+
+<hr>
+
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- audio tag -->
+
+<!-- Here we have use an attribute called controls without this attribute we will not get the output -->
+<!-- audio attributes : src , controls, muted,loop,autoplay -->
+
+<audio controls src="./airtel_telugu.mp3"></audio>
+<audio controls src="./airtel_telugu.mp3" muted></audio>
+<audio controls src="./airtel_telugu.mp3" loop></audio>     <!---the music will be repeated in a loop after completion-->
+<audio controls src="./airtel_telugu.mp3" loop muted></audio>
+<audio controls src="./airtel_telugu.mp3" autoplay></audio> <!--but autoplay is replicated it will not work in the current browsers-->
+
+<hr>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<!-- video tag -->
+
+<video controls src="./zozo.mp4" width="500px"></video>
+<video controls src="./zozo.mp4" muted width="500px"></video>
+<video controls src="./zozo.mp4" loop width="500px"></video>
+<video controls src="./zozo.mp4"loop muted width="500px"></video>
+<video controls src="./zozo.mp4"autoplay width="500px"></video>
+
+<hr>
+<br><br>
+<!-- ------------------------------------------------------------------------------ -->
+<!--we can also write the above as -->
+<video controls width="500px">
+    <source src="./zozo.mp4">
+</video>
+<hr>
+<!-- we can also add poster for the video 
+for that go to chrome and select the related image and copy the image address and store in the 
+poster attribure -->
+
+<video controls src="./zozo.mp4" poster="https://i.pinimg.com/474x/bf/66/94/bf669482b6ed67f0963af38d40ee3837--emotion.jpg" width="500px"></video>
 
 
 </body>
