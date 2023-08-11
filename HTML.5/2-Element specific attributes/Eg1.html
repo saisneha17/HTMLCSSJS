@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Element Specific</title>
+</head>
+<body>
+    <!--bdo : bidirectional -->
+   <p><bdo dir="ltr">Java is object oriented programming</bdo></p> <!--bdo=bidirectional it contains ltr(left to right) and rtl(right to left)attributes-->
+
+    <!-- even if ltr is not written also we will get the same by default left to right that is-->
+    <p><bdo>Java is object oriented programming</bdo></p>
+
+    <p><bdo dir="rtl">Java is object oriented programming</bdo></p>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- abbr-abbreviations -->
+
+     <p><abbr title="html">Hyper Text Markup Language</abbr></p>    <!--it is used for heading purpose and abbreviations
+                                                                                using abbr tag is better-->
+        <p><acronym title="css">cascading style sheets</acronym></p>
+
+
+<!--Element specific attributes
+What are the attributes present in bdo?
+what are the attributs present in abbr tag and acronym tag?
+Difference between absolute path and relative path?
+what are the attributes present in img tag?-->
+<!-- ==================================================================================== -->
+
+<!-- relative path :....images should be stored in the current using folder in the repository-->
+<!-- here we will be using src and alt;src is nothing but source location and alt is alternate -->
+<!-- we can also add another attribute width here -->
+
+<img src="car111.jpg" alt="car" width="400px">
+<img src="./car111.jpg" alt="car" width="400px">
+
+<!--in relative path
+WE CAN USE dot forward slash ./ which means current using folder.... -->
+
+<!-- ------------------------------------------------------------------------- -->
+<!--absolute path :.....images should be stored in another folder in the repository....
+since they are outside the element specific attributes use double dot and forward slash and choose
+element specific attributes--> 
+
+<img src="../2-Element specific attributes/car3.jpg" alt="" width="400px">
+
+
+
+
+</body>
+</html>
