@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<!-- ------------------------------------------------------------------------------------- -->
+<!-- fieldset is used for creating a border...here fieldset and legend are combined tags again -->
+<!-- copy and cut everything and paste in the fieldset -->
+<fieldset>
+    <legend>Fill the Form</legend>
+    <form action="./submitted.html" method="get">
+        Firstname<input type="text" name="fname">
+        Lastname<input type="text" name="lname"> <br><br>
+    
+        <!--we will get the output but it is the wrong way of 
+            writing so we have to use the label tag for this-->
+    
+    <label for="fname">Firstname</label> 
+    <input type="text" name="fname" id="fname">
+    
+    <label for="lname">Lastname</label> 
+    <input type="text" name="lname" id="lname"><br><br>
+    
+    
+    <!--Like pre and code, label and input are also combined tags which 
+        will be using together--> 
+    <!-- for the purpose of integrating we use id and for 
+    they work together and the words inside them must match with eachother-->
+    
+    <label for="Email id">Email</label>
+    <input type="email" name="mail" id="email id"><br><br>
+    
+    
+    <label for="num">contact number</label>
+    <input type="text" name="contact number" id="num"><br><br>
+    
+    <p><b>Gender</b></p>
+    
+    <label for="gen">Male</label>
+    <input type="radio" name="gender" id="gen">
+    
+    <label for="gen">Female</label>
+    <input type="radio" name="gender" id="gen">
+    
+    <label for="gen">Other</label>
+    <input type="radio" name="gender" id="gen"><br><br>
+    
+    <p><b>Skills</b></p>
+    
+    <label for="skl">python</label>
+    <input type="checkbox" name="python" id="skl">
+    
+    <label for="skl">java</label>
+    <input type="checkbox" name="java" id="skl">
+    
+    <label for="skl">java script</label>
+    <input type="checkbox" name="java script" id="skl">
+    
+    <label for="skl">Golang</label>
+    <input type="checkbox" name="Golang" id="skl"><br><br>
+    
+    <input type="submit"><br><br>
+    
+    <input type="reset"><br><br>
+</fieldset>
+
+
+</form>
+<body>
+    
+</body>
+</html>
