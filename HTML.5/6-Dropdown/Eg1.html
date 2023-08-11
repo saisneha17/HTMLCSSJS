@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    
+    <!-- DROPDOWN
+     Select,option,optgroup
+    attributes:
+     select-id,name,size,multiple
+    option-value,lable,disable,selected
+optgroup-label-->
+
+    <select name="" id="" size="3 multiple">  <!--if we need to select more we can increase the size-->  
+        <option value="city">cityone</option>
+        <option value="city">cityTwo</option>
+        <option value="city" label="TS" selected>cityThree</option>  <!--If we want to get some label we can add it like TS KA.....
+        if we want it to be selected on the top use selected tag-->
+        <option value="city" label="KA">cityFour</option>
+        <option value="city" label="KL" disabled>cityFive</option> <!--if we want to disable anything we can disable it-->
+        <option value="city">citysix</option>
+    </select><br><br>
+<!-- --------------------------------------------------- -->
+    <select name="" id="">
+        <optgroup label="South city">
+            <option value="city">cityone</option>
+        <option value="city">cityTwo</option>
+        <option value="city" label="TS" selected>cityThree</option>
+        <option value="city" label="KA">cityFour</option>
+        <option value="city" label="KL"disabled>cityFive</option> <!--we cannot select it if disabled-->
+        <option value="city">citysix</option>
+
+        </optgroup>
+
+        <optgroup label="North city">
+            <option value="city">cityone</option>
+        <option value="city">cityTwo</option>
+        <option value="city">cityThree</option>
+        <option value="city">cityFour</option>
+        <option value="city">cityFive</option>
+        <option value="city">citysix</option>
+        </optgroup>
+    </select>
+
+
+    
+</body>
+</html>
