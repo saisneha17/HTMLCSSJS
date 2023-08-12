@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        table {
+            width: 100%;
+            /* to get the border for table table row and table heading use tr th td */
+        }
+            table,tr,th,td {
+                border: 1px solid black;  /* here by default color is black*/
+                padding:10px ;
+                border-spacing: 10px;
+            }
+        
+/*now add th and td */
+          th,td{
+            height: 50px;
+            vertical-align: top;     /* now add vertical-align top it moves to top and then add
+                                       vertical align bottom it moves to bottom but by default it(table head th) will be in centre*/
+            vertical-align: bottom; /*in the same way for td we will be having by default left side*/ 
+        }
+/* -------------------------------------------------------- */
+th,td{
+    text-align: left;
+    text-align: center;
+    text-align: right;
+}
+ </style>
+</head>
+<body>
+
+<!-- take a style tag on the top,to make it schematic add thead,tbody and tfoot tags so that the 
+browser(SEO-Search Engine Optimisation)understands that this specific area is a header area,body area and footer area-->
+<table>
+    <caption>List of products</caption>
+    <thead>
+<tr>
+    <th>SNo</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+</tr>
+    </thead>
+
+<!-- now add another row <tr>
+and then td which means data/column -->
+<tbody>
+<tr>
+    <td>1</td>
+    <td>Samsung</td>
+    <td>40000</td>
+    </tr>
+<!--add 3 more rows--> 
+<tr>
+<td>2</td>
+<td>Oneplus</td>
+<td>35000</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Vivo</td>
+<td>25000</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="2">Total</td>    <!--inorder to remove space and add as a single column for total add colspan2-->
+<td>100000</td>
+</tr>
+</tfoot>
+<!-- then for styling add table in the style tag on the top -->
+
+</table>    
+</body>
+</html>

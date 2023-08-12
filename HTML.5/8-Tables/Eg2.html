@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        table {
+            width: 100%;
+            /* to get the border for table table row and table heading use tr th td */
+        }
+            table,tr,th,td {
+                border: 1px solid black;  /* here by default color is black*/
+                padding:10px ;
+                border-spacing: 10px;
+            }
+    </style>
+</head>
+<body>
+<!-- in the latest way we use borderspacing and padding instead of cellspacing and cellpadding in the previous example-->
+<!-- take a style tag on the top,to make it schematic add thead,tbody and tfoot tags so that the 
+browser(SEO-Search Engine Optimisation)understands that this specific area is a header area,body area and footer area-->
+<table>
+    <thead>
+<tr>
+    <th>SNo</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+</tr>
+    </thead>
+
+<!-- now add another row <tr>
+and then td which means data/column -->
+<tbody>
+<tr>
+    <td>1</td>
+    <td>Samsung</td>
+    <td>40000</td>
+    </tr>
+<!--add 3 more rows--> 
+<tr>
+<td>2</td>
+<td>Oneplus</td>
+<td>35000</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Vivo</td>
+<td>25000</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="2">Total</td>    <!--inorder to remove space and add as a single column for total add colspan2-->
+<td>100000</td>
+</tr>
+</tfoot>
+<!-- then for styling add table in the style tag on the top -->
+
+</table>    
+</body>
+</html>
