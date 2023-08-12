@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        section{
+            background-color: blueviolet;
+            padding: 20px;                  /*padding increases the inside space  */
+            margin: 20px;                      /* margin increases the outside space */
+            text-align: center;              /* it is used to take the text to the centre */
+            font-size: xx-large;   /* we can also add fontsize either it may be in pixel or buildin atttributes */
+            color: white;        /* if we want the text color as white */
+
+            /* /* if we want to increase the length or width or height of the search bar we can increase it * */
+        }
+    </style>
+</head>
+<body>
+    <!-- DATA LIST-->
+    <section>
+        <label for="devices">Search Devices</label>
+        <input list="device" name="devices" id="devices">
+        <datalist id="device">
+            <!--id and list should be matched
+        if they are different they will not work together -->
+    <!-- combined tags : datalist and input-->
+
+<option value="Apple 11"></option>
+<option value="Apple 12"></option>
+<option value="Apple 13"></option>
+<option value="Apple 14"></option>
+<option value="Samsung Flip 1"></option>
+<option value="Samsung Flip 2"></option>
+<option value="Samsung Flip 3"></option>
+<option value="Samsung Flip 4"></option>
+<option value="vivo x80"></option>
+<option value="vivo x90"></option>
+<!-- examples for this are amazon flipkart and olx search bars -->
+
+<!-- now take a style tag and write section and background color for styling
+add padding which increases the inside space
+then add margin which increases the outside space-->
+
+<!-- ----------------------11/08/23 DATA LIST : --------------------------------------------------------- 
+Datalist attributes :
+
+list="device"(comes under input)
+id="device"(comes under datalist)
+value(option)-->
+
+</datalist>
+    </section>
+    
+</body>
+</html>
