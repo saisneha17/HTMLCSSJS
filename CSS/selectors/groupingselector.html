@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        section, div, p{
+
+            border: 2px solid blue;
+            margin: 10px;   /* for alignment use margin it will be applied for section div and p*/
+            padding: 10px; /* for inside spacing*/
+        }
+
+        /* if we need individual background color take them seperately */
+
+        p{
+            background-color: chartreuse;
+         /*here it will apply to only p tag*/
+        }
+
+        div{
+            background-color: cyan;
+        /* here it will apply to both div and p tag but 
+        p tag overlaps over div*/
+        }
+
+        section{
+            background-color: crimson;
+            /* same in the case of section tag also it will apply to both div and p tags also
+            but p and div overlap over section*/
+        }
+
+    /* if we dont give anycolor to div and p only section's color is applied to everyone */
+
+    </style>
+</head>
+<body>
+    <!-- take section div and p tags
+    then take a style tag as group indicates group of tags take section div and p tags together in the style tag -->
+    <section>
+        <div>
+            <p>Para One</p>
+        </div>
+    </section>
+    
+</body>
+</html>
