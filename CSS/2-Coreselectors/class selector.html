@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+    
+        #s1, div{
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        #s2, div{
+            border: 2px solid brown;
+            padding: 5px;
+            margin: 5px;
+        }
+        /* here only border will be changed
+        as we have common divisions the color of divisions will be same
+        as the last id is s2 the color given to these divisions will be applied here */
+        .c1{
+            background-color: cornflowerblue;   /* all the divisions will be affected at a time */
+            padding: 15px;
+        }
+        .c2{
+            background-color: cornflowerblue;  
+            padding: 15px;
+        }
+
+        #s1, .c1, .c4{
+            background-color: lime;
+            /* in this case divisions of s1 along with class c1 c4 divisions in  s2 will be affected */
+            /* c2 in s1 is not affected because already we have taken the c2 class before so it will be overlapped*/
+        }
+
+    </style>
+</head>
+<body>
+    <!-- write class in the div -->
+    <section id="s1">
+        <div class="c1">One</div>
+        <div class="c2">Two</div>
+        <div class="c3">Three</div>
+        <div class="c4">Four</div>
+    </section>
+    <!-- if we want to maintain one more id copy and give the id as s2-->
+    <section id="s2">
+        <div class="c1">One</div>
+        <div class="c2">Two</div>
+        <div class="c3">Three</div>
+        <div class="c4">Four</div>
+    </section>
+    <!-- to apply styling open the style tag on the top -->
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        section div{
+            border: 2px solid blue;
+            padding: 15px;
+            margin: 15px;  
+        }
+        /* here border is not applying for some tags like (section,p,b )
+        so now we apply border to them */
+
+        section div b{
+            background-color: crimson; /* use background-color instead of border*/
+        }
+
+        /* for lists */
+        section ul li{
+            color: darkred; /*we will get the text color here*/
+            font-size: xx-large;
+        }
+
+        /*if only 2 of them in the list should be changed then add class to the list*/
+              .l1,.l2{
+                color: cyan;
+                 }
+    </style>
+</head>
+<body>
+    <!-- for decendent selectors take section and division tags  -->
+    <section>
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>   
+    </section>
+    <!-- along with this take another section -->
+    <section>
+        <div>
+            <p>Java is <b>object oriented</b> programming language</p>
+        </div>
+    </section>
+    <!-- when we run this  we will be having html syntax
+    now for applying styling use a style tag at the top and select both of the selectors -->
+
+    <!-------------------------------------------------------------------------------------- -->
+    <!-- take another section along with unordered list-->
+    <section>
+        <ul>
+            <li class="l1">One</li>
+            <li class="l2">Two</li>
+            <li class="l3">Three</li>
+            <li class="l4">Four</li>
+            <li class="l5">Five</li>
+        </ul>
+        <!-- but addoing class is not the right way ==========?tomorrows cls-->
+    </section>
+</body>
+</html>

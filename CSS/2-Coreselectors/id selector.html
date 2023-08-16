@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        /* grouping selector: it will be applied to both
+        section, div{
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px;
+        } */
+
+        /* id selector : it will be applied only for an id we are choosing(s1 and s2) */
+        #s1, div{
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        #s2, div{
+            border: 2px solid brown;
+            padding: 5px;
+            margin: 5px;
+        }
+        /* here only border will be changed
+        as we have common divisions the color of divisions will be same
+        as the last id is s2 the color given to these divisions will be applied here */
+
+    </style>
+</head>
+<body>
+    <!-- take a section tag and we can have multiple divisions in a section tag -->
+    <!-- id should be written only for the main one(i.e section)....again it should not be written for div-->
+    <section id="s1">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+    </section>
+    <!-- if we want to maintain one more id copy and give the id as s2-->
+    <section id="s2">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+    </section>
+    <!-- to apply styling open the style tag on the top -->
+    
+</body>
+</html>
