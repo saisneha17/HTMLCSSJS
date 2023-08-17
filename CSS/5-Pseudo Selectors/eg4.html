@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        ol li:first-child, ol li:last-child{
+            border: 2px solid blueviolet;
+        }
+
+        div p b:last-child{
+            font-size: xx-large;
+        }
+        /* if we remove cama in between the div and p and b only the last child will get bold */
+    </style>
+</head>
+<body>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+    </ol>
+
+    <div>
+        <p>
+            <b>Java</b>
+            <b>Javascript</b>
+            <b>Python</b>
+        </p>
+    </div>
+</body>
+</html>
