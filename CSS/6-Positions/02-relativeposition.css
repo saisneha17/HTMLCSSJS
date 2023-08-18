@@ -1,0 +1,34 @@
+.c1{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+    background-color: coral;
+}
+
+.c2{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+    background-color: crimson;
+    position: relative;
+    top: 0px;
+    bottom: 10px;
+
+/* inspet  by increasing px after giving every attribute*/
+/* relative understands the viewport where exactly he is */
+
+}
+
+.c3{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+    background-color: cyan;
+}
+
+.c4{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+    background-color: chartreuse;
+}

@@ -1,0 +1,62 @@
+.c1{
+    border: 2px solid blue;
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+}
+
+.c2{
+    border: 2px solid crimson;
+    margin: 10px;
+    padding: 10px;
+    background-color: darkmagenta;
+    position: relative;
+    /* in case of child absolute we have to make class c2 position as relative*/
+    top: 0px;
+}
+
+.c3{
+    border: 2px solid chartreuse;
+    margin: 10px;
+    padding: 10px;
+    background-color: deeppink;
+}
+
+.c4{
+    border: 2px solid cyan;
+    margin: 10px;
+    padding: 10px;
+    background-color: darkslateblue;
+}
+
+/* now add the class .c22 */
+
+.c22{
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+}
+/* here in the output 2 will be relative(it will be in the same position)
+now write top as 120px in c2... c2 will overlap with 3 and 4 */
+
+/* now make it as zero again */
+/* inorder to make 2.1 and 2.2 as absolute add position absolute here in .c22{ */
+/* after adding absolute both 2.1 and 2.2 will overlap with eachother
+so to control that remove class="22"(in 2.2) for sometime */
+
+/* as viewport of absolute is browser(which means zero)
+now in .c22{ write top of 0px....actually it should go to the top but its not going
+    the reason is c22(absolute) is the child of class c2-parent(relative).so absolute will listen to the relative */
+ /* here parent is relative and child is absolute 
+ therefore even though c22 is absolute it will be in the same position because parent c2 is relative */
+
+ /* now add top=0px in .c22{ */
+/* now inspect by increasing the top px in class div 2.1
+when the parent is relative child will understand the viewport of the relative only*/
+/* ============================================== */
+/* add class="22"(in 2.2) again as 2.1 is hidden over 2.2
+for better understanding we have to remove that */
+
+
+
