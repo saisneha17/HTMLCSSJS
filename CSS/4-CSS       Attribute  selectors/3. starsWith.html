@@ -4,23 +4,26 @@
     <title></title>
     <style>
        [href^="https"]{
-        border: 2px solid seagreen;
+        border: 2px solid crimson;
 
        }
 
-       [src^="../"]{
-        border: 2px solid darkgoldenrod;
+       [src^="../../images"]{
+        border: 2px solid cornflowerblue;
+        /* if ../ is used it will apply to image audio and video
+        if ../../ is used it will apply only to image(whatever we take)*/
 
        }
     </style>
 </head>
 <body>
-    <a href="https://www.google.com" target="_blank">google</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
     <hr>
-    <img src="../2. Element specific attribute/car3.webp" alt="car">
+    <img src="../../images/car2.jpg" alt="car">
     <hr>
-    <audio controls src="../2. Element specific attribute/Airtel audio.mp3"></audio>
+    <audio controls src="../../HTML.5/2-Element specific attributes/airtel_telugu.mp3"></audio>
     <hr>
-    <video controls src="../2. Element specific attribute/zozo video.mp4" type="mp4"></video>
+    <video controls src="../../zozo.mp4" type="mp4"></video>
+    
 </body>
 </html>

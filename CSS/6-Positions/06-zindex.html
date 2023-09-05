@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        div{
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;
+            background-color: crimson;
+            font-size: xx-large;
+            color: white; 
+        } /*as it applies for all use nth child*/
+
+        div:nth-child(1){
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+        }
+
+        div:nth-child(1){
+            position: absolute;
+            top: 0px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+</body>
+</html>
+<!-- while designing a website we will come across these types of issues for eg we will have an image and
+another image will overlap that in that case we need to choose the image which is to be highlighted -->
+
+<!-- and also used if we require image on image....
+and also used if we require an image with transparent text -->
