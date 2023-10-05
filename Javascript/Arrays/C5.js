@@ -6,6 +6,8 @@ console.log(l1.length)
 console.log(l1.indexOf(10)) // 0
 console.log(l1.lastIndexOf(10)) //8
 
-console.log(l1.indexOf(10, 3)) // 5
+console.log(l1.indexOf(10, 3)) // 5 (if a no. is repeated in a list then the IndexOf(10, 3) is from the index that we choose i.e 3 start moving right and the first 10(element) we find is the position
+                                                                                                                          //...(3,4)will give the same result)
+//                (element,Indexposition)
 
-console.log(l1.lastIndexOf(10, 7)) // 5
+console.log(l1.lastIndexOf(10, 7)) // 5 same but from back
